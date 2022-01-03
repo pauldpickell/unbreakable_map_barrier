@@ -17,7 +17,7 @@ minetest.register_node("unbreakable_map_barrier:barrier", {
 minetest.register_chatcommand("mapbarrier", {
 	params = "<x0>,<x1>,<y0>,<y1>,<z0>,<z1>",
 	description = "Generate an unbreakable map barrier",
-	privs = {interact=true},
+	privs = {ban=true},
 	func = function(name, param)
 		x0, x1, y0, y1, z0, z1 = string.match(param, "^([%d.-]+)[, ] *([%d.-]+)[, ] *([%d.-]+)[, ] *([%d.-]+)[, ] *([%d.-]+)[, ] *([%d.-]+)$")
 		minetest.chat_send_all("Values given: x0="..x0.." x1="..x1.." y0="..y0.." y1="..y1.." z0="..z0.." z1="..z1)
