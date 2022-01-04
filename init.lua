@@ -1,7 +1,7 @@
 minetest.register_node("unbreakable_map_barrier:barrier", {
         description = "Indestructible Map Block Barrier",
 		drawtype = "glasslike_framed_optional",
-		tiles = {"default_glass.png", "default_glass_detail.png"},
+		tiles = {"default_glass_detail.png"},
 		use_texture_alpha = "clip",
 		paramtype = "light",
 		paramtype2 = "glasslikeliquidlevel",
